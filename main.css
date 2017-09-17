@@ -1,3 +1,62 @@
-h1 {
-    color: red;
+.bl-background {
+    background: #cdcbcb;
+    padding: 20px;
+    display: inline-block;
+    width: 95%;
+    height: 95%;
+}
+
+    .bl-list {
+        background: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-right: 25px;
+        display: inline-block;
+        width: 55%;
+        float: left;
+    }
+
+        .bl-row {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: #b4b2b2;
+            padding: 5px;
+        }
+
+            .bl-product {
+                display: inline-block;
+                width: 40%;
+            }
+
+            .bl-count {
+                display: inline;
+            }
+
+    .bl-bought {
+        background: white;
+        display: inline-block;
+        width: 40%;
+        float: right;
+    }
+
+/*Кнопки*/
+.bl-label {
+    background: #cdcbcb;
+    display: inline;
+}
+.bl-plus {
+    background: #04a613;
+    display: inline;
+}
+.bl-minus {
+    background: #ff1719;
+    display: inline;
+}
+
+.bl-buttons {
+    display: inline;
+    float:right;
 }
