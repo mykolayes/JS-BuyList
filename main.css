@@ -7,6 +7,7 @@
     height: auto;
     margin: auto;
     margin-top: 5%;
+    border-radius: 20px;
 
     display: flex;
     flex-wrap: wrap;
@@ -22,12 +23,14 @@
         padding-left: 0.5%;
         /*margin-bottom: 10px;*/
         margin-right: 3%;
+        border-radius: 20px;
         display: inline-block;
         width: 55%;
         float: left;
     }
         .bl-list-add-line {
             width: 100%;
+            border-radius: 20px;
         }
         .bl-add-product {
             border-bottom-style: solid;
@@ -52,16 +55,20 @@
             .bl-product {
                 display: inline-block;
                 width: 40%;
+                border-radius: 20px;
             }
 
             .bl-count {
                 display: inline;
+                border-radius: 20px;
+                font-size: 20px;
             }
 
     .bl-bought {
         background: white;
         padding: 0.5%;
         display: inline-block;
+        border-radius: 20px;
         width: 40%;
         float: right;
     }
@@ -94,61 +101,73 @@
             display: inline;
             margin-left: 2%;
             margin-right: 1%;
+            border-radius: 20px;
         }
         .bl-not-bought-goods {
             display: inline;
             margin-left: 2%;
             margin-right: 1%;
+            border-radius: 20px;
         }
 
         .bl-goods {
             background-color: #dddbdb;
             padding: 3px;
             margin-right: 3%;
+            border-radius: 20px;
         }
             .bl-amount {
                 background-color: orange;
+                padding-left: 3px;
+                padding-right: 3px;
                 border-radius: 50%;
             }
 .bl-badge {
     position: fixed;
     left: 40px;
     bottom: -77px;
-    background: orange;
+    background: #962aff;
     width: 125px;
     height: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border: solid;
-    border-color: orange;
+    border-color: #962aff;
     border-width: 2px;
     text-align: center;
     font-size: 20px;
+    color: white;
     transition: transform 1.5s ease;
 }
 
 .bl-badge:hover {
    transform: translate(0, -50px);
     /*bottom: -25px;*/
-    background: lightblue;
+    background: #e6e687;
 }
 
 /*Кнопки*/
 .bl-label {
     background: #cdcbcb;
     display: inline;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 50%;
 }
 .bl-plus {
     background: #04a613;
     display: inline;
+    border-radius: 20px;
 }
 .bl-minus {
     background: #ff1719;
     display: inline;
+    border-radius: 20px;
 }
 
 .bl-add {
     display: inline;
+    font-size: 20px;
     /*width: 15%;*/
     /*float:right;*/
 
@@ -157,6 +176,7 @@
 .bl-buttons {
     display: inline;
     float:right;
+    border-radius: 20px;
 }
 
 .bl-bought-item {
@@ -166,6 +186,7 @@
 .bl-remove-item {
     background: #ff1719;
     display: inline;
+    border-radius: 20px;
 }
 
 /*Print*/
