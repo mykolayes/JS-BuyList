@@ -161,22 +161,22 @@
     padding-bottom: 0.5%;
     border-radius: 50%;
 }
-.bl-plus {
-    background: #04a613;
-    display: inline;
-    border-radius: 20px;
-    font-size: 20px;
-    min-width: 28px;
-}
-.bl-minus {
-    background: #ff1719;
-    display: inline;
-    padding-right: 1%;
-    padding-left: 1%;
-    border-radius: 20px;
-    font-size: 20px;
-    min-width: 28px;
-}
+    .bl-plus {
+        background: #04a613;
+        display: inline;
+        border-radius: 20px;
+        font-size: 20px;
+        min-width: 28px;
+    }
+    .bl-minus {
+        background: #ff1719;
+        display: inline;
+        padding-right: 1%;
+        padding-left: 1%;
+        border-radius: 20px;
+        font-size: 20px;
+        min-width: 28px;
+    }
 
 .bl-add {
     display: inline;
@@ -192,17 +192,39 @@
     border-radius: 20px;
 }
 
-.bl-bought-item {
-    display: inline;
-}
+    .bl-bought-item {
+        display: inline;
+    }
 
-.bl-remove-item {
-    background: #ff1719;
-    display: inline;
-    border-radius: 20px;
+    .bl-remove-item {
+        background: #ff1719;
+        display: inline;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+button:hover::after {
+    content: "" attr(data-tooltip);
+
+    position: absolute;
+    background: rebeccapurple;
+    color: white;
     font-size: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    /*left: 100%;*/
+    top: -10%;
+    left: -50%;
+    z-index: 5;
+    width: 100px;
+    height: auto;
+    transform: translate(0, -50px);
 }
 
+button {
+    position: relative;
+    transition: all 1.5s ease;
+}
 /*Print*/
 @media print {
     .bl-amount {
