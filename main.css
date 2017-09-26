@@ -219,6 +219,7 @@ button:hover::after {
     width: 100px;
     height: auto;
     transform: translate(0, -50px);
+    margin-left: -50px;
 }
 
 button {
