@@ -2,7 +2,7 @@
     background: #cdcbcb;
     padding: 1%;
     /*display: inline-block;*/
-    min-width: 700px;
+    min-width: 550px;
     width: 60%;
     height: auto;
     margin: auto;
@@ -42,7 +42,7 @@
         }
             .bl-text-add-field {
                 display: inline-block;
-                width: 80%;
+                width: 75%;
             }
 
         .bl-row {
@@ -54,7 +54,7 @@
 
             .bl-product {
                 display: inline-block;
-                width: 40%;
+                width: 30%;
                 border-radius: 20px;
             }
 
@@ -124,6 +124,8 @@
                 padding-left: 3px;
                 padding-right: 3px;
                 border-radius: 50%;
+                /*border-color: #ffa500;*/
+                /*border-style: solid;*/
             }
 .bl-badge {
     position: fixed;
@@ -203,6 +205,11 @@
 
 /*Print*/
 @media print {
+    .bl-amount {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+    }
     .bl-badge-title {
         display: none;
     }
@@ -215,6 +222,16 @@
 }
 
 /*Small size*/
-@media (max-width: 500px) {
-
+@media (max-width: 550px) {
+    .bl-background {
+        margin-left: -2.5%;
+    }
+    .bl-list {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+    }
+    .bl-bought {
+        width: 100%;
+    }
 }
