@@ -32,14 +32,17 @@ $(function(){
         });
 
         $node.find(".bl-edit-good").blur(function() {
-            if (true || e.keyCode == '13') {
                 var prod_name = $node.find(".bl-edit-good").val();
                 $node.find(".bl-edit-good").css("display", "none");
                 $node.find(".bl-product").text(prod_name);
                 $node.find(".bl-product").show();
                 $good_not_bought_name.text(prod_name);
                 $good_bought_name.text(prod_name);
-            }
+        });
+
+        $node.find(".bl-edit-good").keyup(function(e) {
+            if (e.which == 13) // Enter key
+                $(this).blur();
         });
 
         $node.find(".bl-remove-item").click(function(){
