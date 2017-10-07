@@ -6,6 +6,8 @@ $(function(){
     var ONE_ITEM_HTML = $(".one-row-template").html();
     var ONE_GOOD_HTML = $(".bl-goods-template").html();
 
+    var disable_editing_product = false;
+
     function addItem(title) {
         var $node = $(ONE_ITEM_HTML); //Create new HTML node
         var $goods_node = $(ONE_GOOD_HTML);
@@ -18,6 +20,27 @@ $(function(){
 
         //Item on the list + buttons
         $node.find(".bl-product").text(title); //Set product title
+
+        $node.find(".bl-product").click(function() {
+            if (!disable_editing_product) {
+                var prod_name = $node.find(".bl-product").text();
+                $node.find(".bl-product").css("display", "none");
+                $node.find(".bl-edit-good").show();
+                $node.find(".bl-edit-good").val(prod_name);
+                $node.find(".bl-edit-good").focus();
+            }
+        });
+
+        $node.find(".bl-edit-good").blur(function() {
+            if (true || e.keyCode == '13') {
+                var prod_name = $node.find(".bl-edit-good").val();
+                $node.find(".bl-edit-good").css("display", "none");
+                $node.find(".bl-product").text(prod_name);
+                $node.find(".bl-product").show();
+                $good_not_bought_name.text(prod_name);
+                $good_bought_name.text(prod_name);
+            }
+        });
 
         $node.find(".bl-remove-item").click(function(){
             $node.remove();
@@ -48,6 +71,7 @@ $(function(){
             $goods_node.hide();
             $node.find(".bl-unbuy-item").show();
             $goods_bought_node.show();
+           disable_editing_product = true;
 
             $node.find(".bl-bought-item").hide();
             $node.find(".bl-remove-item").hide();
@@ -62,6 +86,7 @@ $(function(){
             $goods_node.show();
             $node.find(".bl-unbuy-item").hide();
             $goods_bought_node.hide();
+            disable_editing_product = false;
 
             $node.find(".bl-bought-item").show();
             $node.find(".bl-remove-item").show();
