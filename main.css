@@ -50,6 +50,7 @@
             border-bottom-width: 1px;
             border-bottom-color: #b4b2b2;
             padding: 5px;
+            min-height: 30px;
         }
 
             .bl-product {
@@ -203,6 +204,10 @@
         font-size: 15px;
     }
 
+    .bl-unbuy-item {
+        display: inline;
+    }
+
 button:hover::after {
     content: "" attr(data-tooltip);
 
@@ -257,4 +262,9 @@ button {
     .bl-bought {
         width: 100%;
     }
+}
+
+/*Additional*/
+.crossed_out {
+    text-decoration: line-through;
 }

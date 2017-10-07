@@ -27,8 +27,9 @@
                 <button class="bl-plus" data-tooltip="Increase amount">+</button>
             </div>
             <div class="bl-buttons">
-                <button class="bl-bought-item" data-tooltip="Move to the 'bought' section">Куплене</button>
+                <button class="bl-bought-item" data-tooltip="Move to the 'bought' section">Куплено</button>
                 <button class="bl-remove-item" data-tooltip="Remove item from the list">x</button>
+                <button class="bl-unbuy-item" data-tooltip="Remove item from the 'bought' list" style="display:none;">Не куплено</button>
             </div>
         </div>
         </div>
@@ -63,19 +64,25 @@
     </div>
     <div class="bl-bought">
         <div class="bl-title-not-bought">Залишилося:</div>
-            <span class="bl-bought-goods">
-                <span class="bl-goods">Перці
+            <span class="bl-not-bought-goods">
+                <span class="bl-goods-template" style="display:none;">
+                <span class="bl-goods">
+                    <span class="bl-good-name">Перці</span>
                     <span class="bl-amount">5</span>
                 </span>
-                <span class="bl-goods">Баклажани
-                    <span class="bl-amount">3</span>
                 </span>
+                <!--<span class="bl-goods">Баклажани-->
+                    <!--<span class="bl-amount">3</span>-->
+                <!--</span>-->
             </span>
         <br>
         <div class="bl-title-bought">Куплене:</div>
-            <span class="bl-not-bought-goods">
-                <span class="bl-goods">Картоплини
+            <span class="bl-bought-goods">
+                <span class="bl-goods-template" style="display:none;">
+                <span class="bl-goods">
+                    <span class="bl-good-name">Картоплини</span>
                     <span class="bl-amount">2</span>
+                </span>
                 </span>
             </span>
     </div>
